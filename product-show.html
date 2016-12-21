@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700|Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+
+  <body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar-bahia" style="border-bottom: 2px solid #9F1723">
+      <div class="container navbar-bahia-container">
+        <div class="navbar-bahia-side left hidden-sm hidden-xs">
+          <!-- Div à récupérer sur site du Wagon -->
+            <a href="#" class="collection-navbar">Femmes <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+              <ul class="dropdown-menu">
+                <li>hello</li>
+                <li>hello</li>
+              </ul>
+            <a href="#" class="collection-navbar">Hommes <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a href="#" class="collection-navbar">Enfants <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+            <a href="#" class="collection-navbar">Deco <i class="fa fa-caret-down" aria-hidden="true"></i></a>
+        </div>
+        <div class="logo-bahia-container">
+          <a href="#">
+            <img class="logo-bahia" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+          </a>
+        </div>
+          <div class="navbar-bahia-side right hidden-sm hidden-xs">
+            <a href="#">Artisanat</a>
+            <a href="#">Histoire</a>
+            <a href="#">Valeurs</a>
+            <a href="#">Panier</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- HOMEPAGE -->
+
+
+
+    <!-- SELECTION -->
+
+    <div class="wrapper product-show-page">
+      <div class="container">
+        <div class="row product-descriptions-photos">
+          <div class="product-small-photos" id="gal1">
+            <div class="row" >
+              <a href="#" data-image="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/57517033-43dc-49a9-8391-6a2aa09c9f2a_t8gciw.jpg" data-zoom-image="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/57517033-43dc-49a9-8391-6a2aa09c9f2a_t8gciw.jpg">
+                <img src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/57517033-43dc-49a9-8391-6a2aa09c9f2a_t8gciw.jpg" class="product-small-photo">
+              </a>
+            </div>
+            <div class="row" >
+              <img src="http://imageshack.com/a/img924/7027/f2wAPo.png" class="product-small-photo">
+            </div>
+            <div class="row" >
+              <img src="http://imageshack.com/a/img924/7027/f2wAPo.png" class="product-small-photo">
+            </div>
+            <div class="row" >
+              <img src="http://imageshack.com/a/img924/7027/f2wAPo.png" class="product-small-photo">
+            </div>
+            <div class="row" >
+              <img src="http://imageshack.com/a/img924/7027/f2wAPo.png" class="product-small-photo">
+            </div>
+          </div>
+          <div class="product-big-photo">
+            <img id="big-photo" data-magnify-src="large.jpg" src="http://imageshack.com/a/img924/7027/f2wAPo.png" style="height:auto;width:100%">
+
+          </div>
+          <div class="product-main-infos">
+            <h1>Robe Perla</h1>
+            <h2>Robe cousue main au Mexique
+            <br>Broderie blabla
+            <br>100% coton</h2>
+            <h3>38,00 €</h3>
+            <div class="row" style="margin-right:0px">
+              <div class="col-xs-12 col-sm-6 colors-choices">
+                <!-- INPUT N°1 -->
+                <div class="round-color-choice active" style="background-color: #9F1723">
+                  <input type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+                </div>
+                <!-- INPUT N°2 -->
+                <div class="round-color-choice" style="background-color:  #F3EAEA; z-index:2000">
+                  <input type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-6 colors-choices">
+                <p>Quantité : + / -</p>
+                <input type="number" name="quantity" min="1" max="10" />
+              </div>
+            </div>
+            <div class="row" style="margin-right:0px">
+              <div class="col-xs-12 col-sm-6">
+                <div class="sizes-choices">
+                  <div class="round-size-choice active">
+                  <!-- SIZE N°1  -->
+                    <input id="s-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                    <p><label for="s-size" style="position:relative; top:-33px">S</label></p>
+                  </div>
+                  <!-- SIZE N°2  -->
+                  <div class="round-size-choice active">
+                    <input id="m-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                    <p><label for="m-size" style="position:relative; top:-33px">M</label></p>
+                  </div>
+                  <!-- SIZE N°3 -->
+                  <div class="round-size-choice active">
+                    <input id="l-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                    <p><label for="l-size" style="position:relative; top:-33px">L</label></p>
+                  </div>
+            <!--                   <div class="round-size-choice"><p>XL</p></div>-->
+                </div>
+              </div>
+              <a href="#">
+                <div class="col-xs-12 col-sm-6 btn-add-cart">
+                <h5>Ajouter au panier <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></h5>
+                </div>
+              </a>
+            </div>
+            <div class="product-infos-tabs">
+              <a class="product-infos-tab active" data-target="#product-infos-description">
+                <h5>Description</h5>
+              </a>
+              <a class="product-infos-tab" data-target="#product-infos-guide">
+                <h5>Guide des tailles</h5>
+              </a>
+              <a class="product-infos-tab" data-target="#product-infos-entretien">
+                <h5>Entretien</h5>
+              </a>
+              <a class="product-infos-tab" data-target="#product-infos-histoire">
+                <h5>Son Histoire</h5>
+              </a>
+            </div>
+            <div class="product-infos-contents" id="product-infos-description">
+              <p>Derbies montantes avec bout avant en cuir tabac, la SILK en daim tabac propose une silhouette fine et féminine. Epurée avec seulement deux passants pour un lancer rond et fin. A l'arrière on retrouve une bande en cuir avec surpiqûre foncée.</p>
+            </div>
+            <div class="product-infos-contents hidden" id="product-infos-guide">
+              <p>Guide des tailles. blablabla
+              </p>
+            </div>
+            <div class="product-infos-contents hidden" id="product-infos-entretien">
+              <p>Cette matière a un aspect pelucheux et doux au toucher mais aussi très souple au porter.Avant la première utilisation, nous vous conseillons d’imperméabiliser vos chaussures à l’aide d’un spray adapté, et de réitérer cette opération périodiquement.
+              </p>
+            </div>
+            <div class="product-infos-contents hidden" id="product-infos-histoire">
+              <p>Pour chaque FAGUO un arbre est planté en France. Découvrez nos forêts et localisez la plus proche de chez vous sur notre carte interactive.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <div class="wrapper wrapper-amour product-show-page">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-7">
+          <h2>Voici les artisanes qui ont brodés cette robe Perla à la main</h2>
+          <div class="artisans-infos">
+            <!-- MARIA -->
+            <div class="artisan-infos">
+              <div class="artisan-product-avatar" style="background-image: url('http://www.linternaute.com/actualite/dossier/06/touristes-etrangers-france/images/ana-lucia-mexique.jpg');">
+              </div>
+              <h2><span>Maria</span>, 26 ans</h4>
+            </div>
+            <!-- JOSE -->
+            <div class="artisan-infos">
+              <div class="artisan-product-avatar" style="background-image: url('http://www.mexiquegourmand.com/wp-content/uploads/2015/04/image5.jpg');">
+              </div>
+              <h2><span>Josette</span>, 43 ans</h4>
+            </div>
+            <!-- SAMANTHA -->
+            <div class="artisan-infos">
+              <div class="artisan-product-avatar" style="background-image: url('http://4.bp.blogspot.com/-aBbSEngQZLQ/UJIjc2bBzoI/AAAAAAAAGvY/948arpCG2qE/s1600/26+TARTAR+JF+fleur+cheveu.jpg');">
+              </div>
+              <h2><span>Samantha</span>, 32 ans</h4>
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-5">
+          <a href="https://www.google.com/maps/place/Mexico/">
+            <img class="google-maps-product" src="http://maps.googleapis.com/maps/api/staticmap?center=Mexico&zoom=5&scale=false&size=400x180&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7CMexico" alt="Google Map of Mexico">
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+<div class="footer-items">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <img class="footer-bloomer-brand" src="http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_9000,w_1200,f_auto,q_90/v1/780428/3c85003c1c774eb3be89f15a39066756_urnolg.jpg" alt="">
+      </div>
+
+        <div class="col-md-2">
+          <div class="section-footer">
+           <h1> L'ÉQUIPE </h1>
+           <p> Qui sommes-nous ? </p>
+           <p> Contact </p>
+         </div>
+
+       </div>
+       <div class="col-md-2">
+         <div class="section-footer">
+         <h1> L'EXPLORATION </h1>
+        <p> Notre Méthodologie </p>
+        <p> Notre parcours </p>
+        </div>
+      </div>
+
+      <div class="col-md-2">
+        <div class="section-footer">
+          <br><br>
+          <a href="https://twitter.com/bloomersfrance" class="share-link bg-twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+          <a href="http://bloomers.fr/" class="share-link bg-email">
+            <i class="fa fa-envelope-o"></i>
+          </a>
+          <a href="http://bloomers.fr/" class="share-link bg-facebook">
+            <i class="fa fa-facebook-square"></i>
+          </a>
+        <a href="http://bloomers.fr/" class="share-link bg-instagram">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+        </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="js/jquery.elevatezoom.js"></script>
+  <script type="text/javascript" src="js/jquery.elevateZoom-3.0.8.min.js"></script>
+  <script type="text/javascript" src="js/bahia_blanca.js"></script>
+
+  </body>
+</html>
