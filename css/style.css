@@ -9,10 +9,15 @@ p {
   color:#434141;
 }
 
+a {
+  text-decoration: none;
+}
+
 a:hover {
   text-decoration: none;
   font-weight: bolder;
 }
+
 
 /*// NAVBAR*/
 
@@ -154,6 +159,7 @@ a:hover {
   font-size: 30px;
   font-weight: bolder;
   margin: 8px 0 2px 0;
+  color:#9F1723;
 }
 
 .product-index-bahia-card h5 {
@@ -173,6 +179,11 @@ a:hover {
   background-repeat:no-repeat;
   background-position: center center;
   background-size: cover !important;
+  transition: 0.3s ease-in-out;
+}
+
+.product-square-photo:hover {
+  background-image: url('http://res.cloudinary.com/hrscywv4p/image/upload/c_limit,h_1440,w_720,f_auto,q_90/v1/780428/85ddd6a9c6524dfbab90b7fd8988f2b6_lsw1hr.jpg');
 }
 
 .text-product-card {
@@ -315,7 +326,7 @@ a:hover {
 }
 
 .product-small-photos {
-  flex:0 0 5%;
+  flex:0 0 2%;
 }
 
 .product-small-photo {
