@@ -160,6 +160,7 @@ a:hover {
   font-weight: bolder;
   margin: 8px 0 2px 0;
   color:#9F1723;
+  transition: 0.3s ease-in-out;
 }
 
 .product-index-bahia-card h5 {
