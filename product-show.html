@@ -71,7 +71,6 @@
           </div>
           <div class="product-big-photo">
             <img id="big-photo" data-magnify-src="large.jpg" src="http://imageshack.com/a/img924/7027/f2wAPo.png" style="height:auto;width:100%">
-
           </div>
           <div class="product-main-infos">
             <h1>Robe Perla</h1>
@@ -79,49 +78,56 @@
             <br>Broderie blabla
             <br>100% coton</h2>
             <h3>38,00 €</h3>
-            <div class="row" style="margin-right:0px">
-              <div class="col-xs-12 col-sm-6 colors-choices">
-                <!-- INPUT N°1 -->
-                <div class="round-color-choice active" style="background-color: #9F1723">
-                  <input type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+            <form>
+              <div class="row" style="margin-right:0px">
+                <div class="col-xs-12 col-sm-6 colors-choices">
+                  <!-- INPUT N°1 -->
+                  <div class="round-color-choice active" style="background-color: #9F1723">
+                    <input type="radio" name="color" value="red" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+                  </div>
+                  <!-- INPUT N°2 -->
+                  <div class="round-color-choice" style="background-color:  #F3EAEA; z-index:2000">
+                    <input type="radio" name="color" value="white" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+                  </div>
                 </div>
-                <!-- INPUT N°2 -->
-                <div class="round-color-choice" style="background-color:  #F3EAEA; z-index:2000">
-                  <input type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0"/>
+                <div class="col-xs-12 col-sm-6 qty-choice">
+                  <div class="text-qty">
+                    <p>Quantité :</p>
+                  </div>
+                  <div class="input-choice">
+                    <div id="decrease-quantity" class="qty-btn"><i class="fa fa-minus-circle" aria-hidden="true"></i></div>
+                    <input type="text" id="quantity-input" name="qty" value="1" min="1" max="50" pattern='[0-9]'"/>
+                    <div id="increase-quantity" class="qty-btn"><i class="fa fa-plus-circle" aria-hidden="true"></i></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-xs-12 col-sm-6 colors-choices">
-                <p>Quantité : + / -</p>
-                <input type="number" name="quantity" min="1" max="10" />
-              </div>
-            </div>
-            <div class="row" style="margin-right:0px">
-              <div class="col-xs-12 col-sm-6">
-                <div class="sizes-choices">
-                  <div class="round-size-choice active">
-                  <!-- SIZE N°1  -->
-                    <input id="s-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
-                    <p><label for="s-size" style="position:relative; top:-33px">S</label></p>
+              <div class="row" style="margin-right:0px">
+                <div class="col-xs-12 col-sm-6">
+                  <div class="sizes-choices">
+                    <div class="round-size-choice active">
+                    <!-- SIZE N°1  -->
+                      <input id="s-size" type="radio" name="size" value="S" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                      <label for="s-size" style="position:relative; top:-33px"><p>S</p></label>
+                    </div>
+                    <!-- SIZE N°2  -->
+                    <div class="round-size-choice active">
+                      <input id="m-size" type="radio" name="size" value="M" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                      <label for="m-size" style="position:relative; top:-33px"><p>M</p></label>
+                    </div>
+                    <!-- SIZE N°3 -->
+                    <div class="round-size-choice active">
+                      <input id="l-size" type="radio" name="size" value="L" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
+                      <label for="l-size" style="position:relative; top:-33px"><p>L</p></label>
+                    </div>
                   </div>
-                  <!-- SIZE N°2  -->
-                  <div class="round-size-choice active">
-                    <input id="m-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
-                    <p><label for="m-size" style="position:relative; top:-33px">M</label></p>
-                  </div>
-                  <!-- SIZE N°3 -->
-                  <div class="round-size-choice active">
-                    <input id="l-size" type="radio" name="radio" style="cursor:pointer;height:100%; width:100%;opacity:0;"/>
-                    <p><label for="l-size" style="position:relative; top:-33px">L</label></p>
-                  </div>
-            <!--                   <div class="round-size-choice"><p>XL</p></div>-->
+                </div>
+                <div class="col-xs-12 col-sm-6" style="padding:0">
+                  <button type="submit" id="btn-add-cart">
+                  Ajouter au panier <i class="fa fa-cart-arrow-down" aria-hidden="true"></i>
+                  </button>
                 </div>
               </div>
-              <a href="#">
-                <div class="col-xs-12 col-sm-6 btn-add-cart">
-                <h5>Ajouter au panier <i class="fa fa-cart-arrow-down" aria-hidden="true"></i></h5>
-                </div>
-              </a>
-            </div>
+            </form>
             <div class="product-infos-tabs">
               <a class="product-infos-tab active" data-target="#product-infos-description">
                 <h5>Description</h5>

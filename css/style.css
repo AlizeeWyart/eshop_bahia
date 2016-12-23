@@ -327,7 +327,8 @@ a:hover {
 }
 
 .product-small-photos {
-  flex:0 0 2%;
+    flex: 0 0 5%;
+    padding-right: 10px;
 }
 
 .product-small-photo {
@@ -355,6 +356,31 @@ a:hover {
   display:flex;
   align-items: right;
   margin-top:20px;
+}
+
+.qty-choice {
+  margin: 0;
+  display:flex;
+  align-items: right;
+  margin-top:20px;
+  padding-left:0;
+  justify-content: space-between;
+}
+
+.input-choice {
+  display:flex;
+}
+
+.qty-btn i {
+  color: #9F1723;
+}
+
+.qty-btn {
+  cursor:pointer;
+}
+
+.qty-btn i:hover {
+  opacity:0.77;
 }
 
 .round-color-choice {
@@ -464,25 +490,45 @@ a:hover {
   font-weight: lighter;
 }
 
-.btn-add-cart {
+#btn-add-cart {
   margin-top: 20px;
   background-color: #9F1723;
   color: white;
   transition: background 0.3s ease;
   text-align: center;
   border: 1px solid rgba(255,255,255,0);
+  width:100%;
 }
-.btn-add-cart p {
+#btn-add-cart p {
   font-weight:lighter;
 }
 
-.btn-add-cart:hover {
+#btn-add-cart:hover {
     opacity: 1;
     background: white;
     text-decoration: none;
     color: #9F1723;
     border: 1px solid #9F1723;
   }
+
+#quantity-input{
+  width: 30px;
+  height: 21px;
+  text-align: center;
+  border: 0;
+  background-color: #F3EAEA;
+  color: #9F1723;
+  margin: 0 10px 0 10px;
+  padding: 0 0 3px 0;
+}
+
+#quantity-input:focus {
+  border: 0px solid #9F1723 ;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(159, 23, 35  , 0.6);
+  outline: 0 none;
+}
+
+
   /*ARSTISAN*/
 
 .wrapper-amour {

@@ -39,5 +39,22 @@ $(document).ready(function() {
   }, function() {
     $('.dropdown-menu').stop(true, true).fadeOut(500);
   });
+  // QUANTITY IN SHOW PRODUCT
+  // INCREASE +1
+  $('#increase-quantity').on("click", function(e){
+    var qty = $('#quantity-input').val();
+    console.log(qty);
+    var newQty = parseInt(qty) + 1;
+    $('#quantity-input').val(newQty);
+  });
+  // DECREASE - 1
+  $('#decrease-quantity').on("click", function(e){
+    var qty = $('#quantity-input').val();
+    console.log(qty);
+    var newQty = parseInt(qty) - 1;
+    if(newQty < 1) newQty=1;
+    if(newQty >= 10) newQty=10;
+    $('#quantity-input').val(newQty);
+  });
 });
 
